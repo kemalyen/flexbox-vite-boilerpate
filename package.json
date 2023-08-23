@@ -2,17 +2,24 @@
   "name": "vite-vanilla",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
     "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
+  "private": true,
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vituum/vite-plugin-handlebars": "^1.0.0",
+    "@vituum/vite-plugin-twig": "^1.0.0",
     "sass": "^1.64.2",
-    "vite": "^4.4.8"
+    "vite": "^4.4.8",
+    "vituum": "^1.0.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",

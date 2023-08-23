@@ -1,14 +1,11 @@
-const path = require('path')
-
+import vituum from 'vituum'
+import twig from '@vituum/vite-plugin-twig'
+ 
 export default {
-  root: path.resolve(__dirname, 'src'),
-  resolve: {
-    alias: {
-      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-    }
-  },
-  server: {
-    port: 8080,
-    hot: true
-  }
+     plugins: [
+        vituum(),
+        twig({
+            root: './src'
+        })
+    ]
 }
